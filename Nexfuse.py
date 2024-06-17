@@ -29,7 +29,7 @@ class App(ctk.CTk):
 
         # Configure window
         self.title("NeXFusE")
-        self.iconbitmap("icon.ico")
+        self.iconbitmap("assets/icon.ico")
         self.geometry("1100x580")
         self.configure(bg=self.cget("bg"))
 
