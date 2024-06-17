@@ -1,6 +1,6 @@
 <div align="center">
+  <h1>Nexfuse Framework</h1>
   <img width="125px" src="nexfuse.png" />
-  <h1>Havoc</h1>
   <br/>
 
 # Nexfuse Framework
