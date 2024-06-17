@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Nexfuse Framework</h1>
-  <img width="125px" src="nexfuse.png" />
+  <img width="125px" src="assets/nexfuse.ico" />
   <br/>
 </div>
 
