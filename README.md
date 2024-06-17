@@ -13,7 +13,7 @@ Nexfuse is a Python-based framework inspired by the NSA's Marble Framework, desi
 
 ## Installation
 
-Install Executable
+Clone repository 
 
 ```bash
   git clone https://github.com/B1ade-Z/NexFuse/
