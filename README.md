@@ -2,6 +2,7 @@
   <h1>Nexfuse Framework</h1>
   <img width="125px" src="nexfuse.png" />
   <br/>
+</div>
 
 # Nexfuse Framework
 
