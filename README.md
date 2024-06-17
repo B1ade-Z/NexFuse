@@ -44,5 +44,6 @@ https://github.com/B1ade-Z/NexFuse/releases/tag/v1.0
 
 ## Tool Preview
 
-![Nexfuse](Screenshot 2024-06-17 224339](https://github.com/B1ade-Z/NexFuse/assets/164549057/35839f56-331e-4205-a864-720c5f5fff77)
+![nexfuse](https://github.com/B1ade-Z/NexFuse/assets/164549057/bb77f239-b99f-47cd-a0e4-f90c709c2667)
+
 
