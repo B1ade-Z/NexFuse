@@ -25,6 +25,15 @@ or
 
 https://github.com/B1ade-Z/NexFuse/releases/tag/v1.0
 
+## Supported Programming language
+
+- Python
+- C++
+- C
+- Rust
+- Golang
+- Shell Script
+
 ## Features
 
 - Mordern UI
