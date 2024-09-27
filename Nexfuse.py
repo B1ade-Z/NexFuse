@@ -12,13 +12,12 @@ About: An anti-forensics tool inspired by NSA's Marble Framework to change the c
 [!] Supported prorgamming language: Python, C++, C, Rust, Golang, Shell script
 
 """
-
-
 import tkinter as tk
 from tkinter import filedialog, ttk, messagebox
 import customtkinter as ctk
 import os
 import re
+from translator import translate_comments
 from deep_translator import GoogleTranslator
 
 ctk.set_appearance_mode("Dark")
@@ -231,7 +230,9 @@ class App(ctk.CTk):
 
         self.tabs[tab_container]["saved"] = True
 
+    # At the top of your main script, import the Cython module
 
+    # Update your obfuscate_event method
     def obfuscate_event(self):
         selected_tab = self.notebook.select()
         tab_container = self.notebook.nametowidget(selected_tab)
@@ -244,7 +245,8 @@ class App(ctk.CTk):
             language = self.detect_language(file_path)
 
             if language == "Unknown" or not language:
-                messagebox.showinfo("Translation Error", "Error: Unable to determine language or target language not selected.\n\nOnly Python, C++, C, Rust, Golang and Shell script is supported")
+                messagebox.showinfo("Translation Error",
+                                    "Error: Unable to determine language or target language not selected.\n\nOnly Python, C++, C, Rust, Golang and Shell script is supported")
                 return
 
             target_language = self.get_target_language()
@@ -252,14 +254,15 @@ class App(ctk.CTk):
                 messagebox.showinfo("Translation Error", "Error: Target language not selected.")
                 return
 
-            translated_content = self.translate_comments(content, language)
+            # Use the Cython function for translation
+            translated_content = translate_comments(content, language, target_language)
             text_widget.delete("1.0", tk.END)
             text_widget.insert("1.0", translated_content)
             text_widget.tag_add("custom_tag", "1.0", tk.END)  # Apply the custom text tag
 
             # Show success message
-            messagebox.showinfo("Translation Complete", "Alert: Remember to match the modified code with existing code to ensure any unwanted error.\n\nFile translation completed successfully!")
-
+            messagebox.showinfo("Translation Complete",
+                                "Alert: Remember to match the modified code with existing code to ensure any unwanted error.\n\nFile translation completed successfully!")
 
     def detect_language(self, file_path):
         extension = os.path.splitext(file_path)[1].lower()
