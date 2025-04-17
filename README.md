@@ -19,9 +19,6 @@ Clone repository
   pip install customtkinter deep-translator
   python3 NexFuse.py
 ```
-or 
-
-https://github.com/B1ade-Z/NexFuse/releases/tag/v1.0
 
 ## Supported Programming language
 
